@@ -11,7 +11,6 @@ class SettingPage extends StatefulWidget {
 }
 
 class _SettingPageState extends State<SettingPage> {
-  bool isdark = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,8 +49,6 @@ class _SettingPageState extends State<SettingPage> {
                   onPressed: widget.toggleTheme != null
                       ? widget.toggleTheme!
                       : () {}, // Null check
-                  // isdark = Shop().themetoggle(isDarkMode);
-
                   icon: Icon(
                     widget.isDarkMode
                         ? Icons.toggle_on

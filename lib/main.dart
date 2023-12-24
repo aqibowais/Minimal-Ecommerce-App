@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:minimal_ecom/models/shop.dart';
 import 'package:minimal_ecom/pages/cart_page.dart';
 import 'package:minimal_ecom/pages/intro_page.dart';
 import 'package:minimal_ecom/pages/setting_page.dart';
@@ -33,8 +32,6 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: isDarkMode ? darkMode : lightMode,
-      darkTheme: darkMode,
-      themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       home: const IntroPage(),
       routes: {
